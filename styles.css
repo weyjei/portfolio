@@ -5,13 +5,13 @@
 }
 
 body * {
-  font-family: Arial, sans-serif;
+  font-family: ariel, sans-serif;
   line-height: 1.6;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgba(136, 194, 115, 0.8)"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto; 
 }
 
 #header {
-  background-color: #f0f0f0;
+  background-color: #ECDFCC;
   text-align: center;
   padding: 0;
   position: relative;
@@ -19,7 +19,7 @@ body * {
 
 #navbar {
   position: fixed; 
-  top: 0; 
+  top: 20px; 
   left: 50%;
   transform: translateX(-50%); 
   background-color: #88C273; 
@@ -75,13 +75,14 @@ body * {
 }
 
 .hero-content h1 {
-  font-size: 2.5em;
-  margin: 20px 0;
+  font-size: 3em;
+  margin: 0px 0;
+  color: #000;
 }
 
 .hero-content p {
   font-size: 1.2em;
-  color: black; 
+  color: grey; 
 }
 
 section {
@@ -103,29 +104,35 @@ section p {
   display: grid; 
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px; 
+  max-width: 1000px;
+  margin: auto;
 }
 
 .project-tile {
-  background: #f4f4f4; 
+  background: #f4f4f4;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: transform 0.3s; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
 }
 
 .project-tile:hover {
-  transform: scale(1.05); 
+  transform: scale(1.01);
 }
 
-.project-iframe {
-  width: 100%; 
-  height: 200px; 
-  border: none; 
-  margin: 0; 
+.project-image {
+  width: 80%; 
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.project-tile iframe {
-  height: 100%; 
+.project-tile h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
 }
 
 @media (max-width: 800px) {
@@ -185,23 +192,23 @@ textarea {
 }
 
 #profile-link {
-    color: #4CAF50; 
-    text-decoration: none; 
-    font-weight: bold; 
-    padding: 10px;
+  color: #4CAF50; 
+  text-decoration: none; 
+  font-weight: bold; 
+  padding: 10px;
 }
 
 #profile-link:hover {
-    text-decoration: underline; 
-    color: #2e7d32; 
+  text-decoration: underline; 
+  color: #2e7d32; 
 }
-
 
 .footer {
   background-color: #ffffff; 
   color: grey;
   padding: 0px;
   text-align: center;
+  font-size: 0.8rem
 }
 
 @media (max-width: 800px) {
